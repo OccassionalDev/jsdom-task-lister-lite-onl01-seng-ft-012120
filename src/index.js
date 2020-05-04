@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const createNewTask = event => {
   event.preventDefault();
-  const newTaskDescription = document.getElementById("new-task-description");
   
+  const newTaskDescription = document.getElementById("new-task-description");
   const newTask = document.createElement("li");
+  
   newTask.innerText = newTaskDescription.value;
 
   addTask(newTask);
