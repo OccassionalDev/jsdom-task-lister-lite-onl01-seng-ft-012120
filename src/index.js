@@ -6,9 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Form event listener 
   newTask.addEventListener("submit", createANewTask);
-  
-  
-  
-  
-  
 });
+
+function createANewTask() {
+  
+}
+
+function addTask {
+  
+}
