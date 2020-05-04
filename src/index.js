@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   newTaskFromForm.addEventListener("submit", createANewTask);
 });
 
-const createNewTask = event => {
+const createANewTask = event => {
   event.preventDefault();
   
   const newTaskDescription = document.getElementById("new-task-description");
