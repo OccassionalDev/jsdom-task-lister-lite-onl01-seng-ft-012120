@@ -20,6 +20,6 @@ const createANewTask = event => {
   event.target.reset();
 };
 
-function addTask() {
+const addTask = task => {
   document.getElementById("tasks").appendChild(task);
-}
+};
