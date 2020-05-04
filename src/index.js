@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newTodoElement = document.getElementById("tasks");
   
   // Form event listener 
-  newTask.addEventListener("submit", createN)
+  newTask.addEventListener("submit", createANewTask)
   
   
   
