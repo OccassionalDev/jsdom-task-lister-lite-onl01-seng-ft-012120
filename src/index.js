@@ -21,5 +21,5 @@ const createNewTask = event => {
 };
 
 function addTask() {
-  
+  document.getElementById("tasks").appendChild(task);
 }
