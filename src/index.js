@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   newTask.addEventListener("submit", createANewTask);
 });
 
-function createANewTask() {
+const createANewTask => event() {
   
 }
 
