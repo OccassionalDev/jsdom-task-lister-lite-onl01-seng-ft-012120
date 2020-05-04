@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const newTask = document.getElementById("create-task-form");
-  const newDescription = document.getElementById("new-task-description");
+  const newTaskFromForm = document.getElementById("create-task-form");
+  const newDescriptionArea = document.getElementById("new-task-description");
   
   const newTodoElement = document.getElementById("tasks");
   
   // Form event listener 
-  newTask.addEventListener("submit", createANewTask);
+  newTaskFromForm.addEventListener("submit", createANewTask);
 });
 
-const createANewTask => event => {
-  
+const createNewTask = event => {
+  event.preventDefault();
+  const newTaskDescription = document.getElementById("new-task-description");
+  const newTask = document.createElement("li");
+  newTask.innerText = newTaskDescription.value;
+
+  appendNewTask(newTask);
+  event.target.reset();
 };
 
 function addTask() {
